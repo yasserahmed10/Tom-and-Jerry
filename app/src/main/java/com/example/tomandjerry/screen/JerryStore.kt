@@ -14,7 +14,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.tomandjerry.R
-import com.example.tomandjerry.SpacerVertical24
+import com.example.tomandjerry.composable.SpacerVertical24
 import com.example.tomandjerry.composable.FilterIcon
 import com.example.tomandjerry.composable.Header
 import com.example.tomandjerry.composable.NotificationIcon
