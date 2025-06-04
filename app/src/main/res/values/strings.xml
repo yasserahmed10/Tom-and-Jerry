@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tom and Jerry</string>
+    <string name="hi_jerry">Hi, Jerry 👋🏻</string>
+    <string name="which_tom_do_you_want_to_buy">Which Tom do you want to buy?</string>
+    <string name="notification_icon">Notification icon</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="search_icon">Search icon</string>
+    <string name="search_about_tom">Search about tom ...</string>
+    <string name="filter_icon">Filter icon</string>
+</resources>
