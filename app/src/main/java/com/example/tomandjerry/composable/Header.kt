@@ -3,6 +3,7 @@ package com.example.tomandjerry.composable
 import android.R.attr.fontWeight
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -15,12 +16,12 @@ import com.example.tomandjerry.ui.theme.PrimaryColor
 import com.example.tomandjerry.ui.theme.SecondaryColor
 
 @Composable
-fun Header(
+fun RowScope.Header(
     title: String,
     subTitle: String,
     modifier: Modifier= Modifier
 ){
-    Column(verticalArrangement = Arrangement.Center, modifier = modifier.padding(end = 62.dp)
+    Column(verticalArrangement = Arrangement.Center, modifier = modifier.weight(1f)
     ) {
         Text(text = title,
             color = PrimaryColor,

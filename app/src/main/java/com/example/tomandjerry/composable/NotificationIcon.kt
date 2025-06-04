@@ -8,17 +8,14 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -73,8 +70,8 @@ fun NotificationIcon() {
 fun spToDp(sp: TextUnit): Dp {
     val density = LocalDensity.current
     return with(density) {
-        val px = sp.toPx()              // Convert sp to pixels
-        val rawDp = px / density.density        // Convert px to dp (ignores fontScale)
+        val px = sp.toPx()
+        val rawDp = px / density.density
         rawDp.dp
     }
 }
