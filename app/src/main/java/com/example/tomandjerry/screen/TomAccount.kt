@@ -33,7 +33,7 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.tomandjerry.R
-import com.example.tomandjerry.SpacerVertical24
+import com.example.tomandjerry.composable.SpacerVertical24
 import com.example.tomandjerry.composable.SpacerHorizontal8
 import com.example.tomandjerry.composable.SpacerVertical12
 import com.example.tomandjerry.composable.SpacerVertical16
