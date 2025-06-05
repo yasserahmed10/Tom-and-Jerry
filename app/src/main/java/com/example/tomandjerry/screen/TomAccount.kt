@@ -242,7 +242,7 @@ fun TomAccount(){
 }
 
 @Composable
-private fun ScoreList(scores: List<Score>) {
+ fun ScoreList(scores: List<Score>) {
     for (i in 0..scores.lastIndex step 2) {
         Row(modifier = Modifier.padding(horizontal = 16.dp)) {
             ScoreCard(scores[i])
