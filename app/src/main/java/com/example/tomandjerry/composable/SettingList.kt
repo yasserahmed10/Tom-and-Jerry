@@ -8,6 +8,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import com.example.tomandjerry.spacer.SpacerVertical12
+import com.example.tomandjerry.spacer.SpacerVertical8
 
 @Composable
 fun SettingList(settingSections: List<SettingSection>) {
