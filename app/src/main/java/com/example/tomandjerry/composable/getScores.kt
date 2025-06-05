@@ -2,7 +2,6 @@ package com.example.tomandjerry.composable
 
 import androidx.compose.ui.graphics.Color
 import com.example.tomandjerry.R
-import com.example.tomandjerry.screen.Score
 
 fun getScores(): List<Score> {
     return listOf(
