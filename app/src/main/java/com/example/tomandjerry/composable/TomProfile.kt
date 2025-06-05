@@ -26,6 +26,8 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.tomandjerry.R
+import com.example.tomandjerry.spacer.SpacerVertical16
+import com.example.tomandjerry.spacer.SpacerVertical4
 import com.example.tomandjerry.ui.theme.IBM
 
 @Composable
