@@ -15,7 +15,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.tomandjerry.R
-import com.example.tomandjerry.composable.SpacerVertical24
+import com.example.tomandjerry.spacer.SpacerVertical24
 import com.example.tomandjerry.composable.FilterIcon
 import com.example.tomandjerry.composable.Header
 import com.example.tomandjerry.composable.NotificationIcon
@@ -23,11 +23,11 @@ import com.example.tomandjerry.composable.ProfileImage
 import com.example.tomandjerry.composable.PromotionBanner
 import com.example.tomandjerry.composable.SearchCard
 import com.example.tomandjerry.composable.SectionHeader
-import com.example.tomandjerry.composable.SpacerHorizontal24
-import com.example.tomandjerry.composable.SpacerHorizontal8
-import com.example.tomandjerry.composable.SpacerVertical12
-import com.example.tomandjerry.composable.SpacerVertical16
-import com.example.tomandjerry.composable.SpacerVertical8
+import com.example.tomandjerry.spacer.SpacerHorizontal24
+import com.example.tomandjerry.spacer.SpacerHorizontal8
+import com.example.tomandjerry.spacer.SpacerVertical12
+import com.example.tomandjerry.spacer.SpacerVertical16
+import com.example.tomandjerry.spacer.SpacerVertical8
 import com.example.tomandjerry.composable.TomCard
 import com.example.tomandjerry.ui.theme.BackgroundColor
 
