@@ -206,7 +206,7 @@ fun TomAccount(){
 }
 
 @Composable
-private fun Setting(setting: Setting) {
+ fun Setting(setting: Setting) {
     Row(
         modifier = Modifier.padding(horizontal = 16.dp),
         verticalAlignment = Alignment.CenterVertically
