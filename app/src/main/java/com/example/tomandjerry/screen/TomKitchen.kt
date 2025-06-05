@@ -40,8 +40,8 @@ import com.example.tomandjerry.composable.Category
 import com.example.tomandjerry.composable.DetailCard
 import com.example.tomandjerry.composable.ItemPriceCard
 import com.example.tomandjerry.composable.MethodCard
-import com.example.tomandjerry.composable.SpacerHorizontal8
-import com.example.tomandjerry.composable.SpacerVertical16
+import com.example.tomandjerry.spacer.SpacerHorizontal8
+import com.example.tomandjerry.spacer.SpacerVertical16
 import com.example.tomandjerry.ui.theme.IBM
 import com.example.tomandjerry.ui.theme.PastaDesColor
 import com.example.tomandjerry.ui.theme.PrimaryColor
