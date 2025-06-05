@@ -28,7 +28,7 @@ import com.example.tomandjerry.composable.getSettings
 import com.example.tomandjerry.ui.theme.IBM
 
 @Composable
-fun TomAccount(){
+fun TomAccount() {
     val scrollState = rememberScrollState()
     val scores = getScores()
     val settingSections = getSettings()
@@ -37,16 +37,14 @@ fun TomAccount(){
     ) {
         SpacerVertical200()
         Image(
-            modifier = Modifier
-                .fillMaxSize(),
+            modifier = Modifier.fillMaxSize(),
             painter = painterResource(id = R.drawable.rec1),
             contentDescription = null,
             contentScale = ContentScale.FillWidth,
             alignment = Alignment.TopStart
         )
         Image(
-            modifier = Modifier
-                .fillMaxSize(),
+            modifier = Modifier.fillMaxSize(),
             painter = painterResource(id = R.drawable.rec2),
             contentDescription = null,
             contentScale = ContentScale.FillWidth,
@@ -77,6 +75,6 @@ fun TomAccount(){
 
 @Preview
 @Composable
-fun TomAccountPreview(){
+fun TomAccountPreview() {
     TomAccount()
 }
