@@ -9,8 +9,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.example.tomandjerry.screen.JerryStore
-import com.example.tomandjerry.screen.TomKitchen
 import com.example.tomandjerry.ui.theme.BackgroundColor
 
 class MainActivity : ComponentActivity() {
@@ -29,7 +27,7 @@ class MainActivity : ComponentActivity() {
                             top = innerPadding.calculateTopPadding(),
                             bottom = innerPadding.calculateBottomPadding()
                         )
-                ) { JerryStore() }
+                ) {  }
             }
         }
 
