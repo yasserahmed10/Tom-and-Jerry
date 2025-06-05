@@ -37,6 +37,7 @@ import com.example.tomandjerry.composable.SpacerVertical24
 import com.example.tomandjerry.composable.SpacerHorizontal8
 import com.example.tomandjerry.composable.SpacerVertical12
 import com.example.tomandjerry.composable.SpacerVertical16
+import com.example.tomandjerry.composable.SpacerVertical200
 import com.example.tomandjerry.composable.SpacerVertical4
 import com.example.tomandjerry.composable.SpacerVertical8
 import com.example.tomandjerry.composable.spToDp
@@ -52,13 +53,7 @@ fun TomAccount(){
     Box(
         modifier = Modifier
     ) {
-        Spacer(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(200.dp)
-                .background(Color(0xFF226993))
-        )
-
+        SpacerVertical200()
         Image(
             modifier = Modifier
                 .fillMaxSize(),
