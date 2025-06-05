@@ -78,7 +78,7 @@ fun TomProfile() {
             Text(
                 modifier = Modifier
                     .height(spToDp(14.4.sp))
-                    .offset(y = -0.1.dp),
+                    .offset(y = (-0.1).dp),
                 text = "Edit foolishness",
                 fontFamily = IBM,
                 fontSize = 10.sp,
