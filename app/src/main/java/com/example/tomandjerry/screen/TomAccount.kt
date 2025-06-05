@@ -38,6 +38,7 @@ import com.example.tomandjerry.composable.SpacerHorizontal8
 import com.example.tomandjerry.composable.SpacerVertical12
 import com.example.tomandjerry.composable.SpacerVertical16
 import com.example.tomandjerry.composable.SpacerVertical200
+import com.example.tomandjerry.composable.SpacerVertical23
 import com.example.tomandjerry.composable.SpacerVertical4
 import com.example.tomandjerry.composable.SpacerVertical8
 import com.example.tomandjerry.composable.spToDp
@@ -105,7 +106,7 @@ fun TomAccount(){
                 RoundedCornerShape(topEnd = 20.dp, topStart = 20.dp)
             )
     ) {
-        Spacer(modifier = Modifier.height(23.dp))
+        SpacerVertical23()
 
         ScoreList(scores)
 
