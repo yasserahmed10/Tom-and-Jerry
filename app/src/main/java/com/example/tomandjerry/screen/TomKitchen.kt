@@ -55,7 +55,6 @@ import com.example.tomandjerry.ui.theme.PrimaryColor
 
 @Composable
 fun TomKitchen() {
-    val scrollState = rememberScrollState()
     Box(modifier = Modifier.fillMaxSize()) {
         Box(
             modifier = Modifier
