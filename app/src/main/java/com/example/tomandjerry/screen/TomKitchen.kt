@@ -37,6 +37,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -119,17 +120,20 @@ fun TomKitchen() {
                                 fontWeight = FontWeight.Medium,
                                 fontFamily = IBM
                             )
-                            Image(painterResource(id = R.drawable.favorite_icon), null)
+
                         }
 
-                        Spacer(modifier = Modifier.height(8.dp))
-                        ItemPriceCard(
-                            modifier = Modifier,
-                            backgroundColor = Color(0xFFE9F6FB),
-                            "5 cheeses",
-                            0,
-                            "0"
-                        )
+                        Box(modifier = Modifier.fillMaxWidth()) {
+                            Image(painterResource(id = R.drawable.favorite_icon), null, modifier = Modifier.align(
+                                Alignment.TopEnd))
+                            ItemPriceCard(
+                                modifier = Modifier.padding(top=8.dp),
+                                backgroundColor = Color(0xFFE9F6FB),
+                                "5 cheeses",
+                                0,
+                                "0"
+                            )
+                        }
                         Spacer(modifier = Modifier.height(8.dp))
                         Text(
                             "Pasta cooked with a charger cable and sprinkled with questionable cheese. Make sure to unplug it before eating (or not, you decide).",
@@ -363,4 +367,10 @@ fun Category(@DrawableRes drawableRes: Int, content: String) {
             style = TextStyle(lineHeight = TextUnit.Unspecified, letterSpacing = 0.5.sp)
         )
     }
+}
+
+@Preview
+@Composable
+fun TomKitchenPreview(){
+    TomKitchen()
 }
