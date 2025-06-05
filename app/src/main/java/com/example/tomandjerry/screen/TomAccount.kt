@@ -257,7 +257,7 @@ fun TomAccount(){
 }
 
 @Composable
-private fun SectionTitle(title: String) {
+ fun SectionTitle(title: String) {
     Text(
         modifier = Modifier.padding(horizontal = 16.dp),
         text = title,
