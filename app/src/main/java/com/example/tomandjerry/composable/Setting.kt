@@ -1,5 +1,6 @@
 package com.example.tomandjerry.composable
 
+import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -18,7 +19,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.tomandjerry.screen.Setting
 import com.example.tomandjerry.ui.theme.IBM
 
 @Composable
@@ -56,3 +56,7 @@ fun Setting(setting: Setting) {
         )
     }
 }
+data class Setting(
+    val title: String,
+    @DrawableRes val drawableRes: Int
+)
