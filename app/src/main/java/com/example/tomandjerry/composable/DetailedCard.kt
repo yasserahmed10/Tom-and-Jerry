@@ -19,6 +19,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.tomandjerry.spacer.SpacerVertical12
+import com.example.tomandjerry.spacer.SpacerVertical8
 import com.example.tomandjerry.ui.theme.DetailCardSubTitleColor
 import com.example.tomandjerry.ui.theme.DetailCardTitleColor
 import com.example.tomandjerry.ui.theme.IBM
