@@ -1,8 +1,6 @@
 package com.example.tomandjerry.composable
 
 import com.example.tomandjerry.R
-import com.example.tomandjerry.screen.Setting
-import com.example.tomandjerry.screen.SettingSection
 
 fun getSettings(): List<SettingSection> {
     return listOf(
