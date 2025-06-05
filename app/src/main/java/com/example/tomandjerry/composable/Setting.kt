@@ -19,6 +19,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.tomandjerry.spacer.SpacerHorizontal8
 import com.example.tomandjerry.ui.theme.IBM
 
 @Composable
