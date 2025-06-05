@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.tomandjerry.R
+import com.example.tomandjerry.spacer.SpacerHorizontal4
 import com.example.tomandjerry.ui.theme.IBM
 import com.example.tomandjerry.ui.theme.MainBlueColor
 
