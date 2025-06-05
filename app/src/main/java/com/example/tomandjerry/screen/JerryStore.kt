@@ -51,15 +51,21 @@ fun JerryStore() {
         ) {
             ProfileImage(painter = painterResource(id = R.drawable.profile_image))
             SpacerHorizontal8()
-            Header(stringResource(R.string.hi_jerry), stringResource(R.string.which_tom_do_you_want_to_buy))
+            Header(
+                stringResource(R.string.hi_jerry),
+                stringResource(R.string.which_tom_do_you_want_to_buy)
+            )
             SpacerHorizontal24()
             NotificationIcon()
         }
         SpacerVertical12()
         Row(modifier = Modifier.fillMaxWidth()) {
-                SearchCard(painterResource(id = R.drawable.search_icon), stringResource(R.string.search_about_tom))
-                SpacerHorizontal8()
-                FilterIcon()
+            SearchCard(
+                painterResource(id = R.drawable.search_icon),
+                stringResource(R.string.search_about_tom)
+            )
+            SpacerHorizontal8()
+            FilterIcon()
         }
         SpacerVertical8()
         PromotionBanner()
@@ -67,21 +73,63 @@ fun JerryStore() {
         SectionHeader()
         SpacerVertical16()
         Row(modifier = Modifier.padding(horizontal = 16.dp)) {
-        TomCard("Sport Tom", "He runs 1 meter... trips over his boot.\n", R.drawable.sport_tom, "5", 5, "3 cheeses")
-        SpacerHorizontal8()
-        TomCard("Tom the lover", "He loves one-sidedly... and is beaten by the other side.\n", R.drawable.tom_the_lover, "5", 0, "5 cheeses")
+            TomCard(
+                "Sport Tom",
+                "He runs 1 meter... trips over his boot.\n",
+                R.drawable.sport_tom,
+                "5",
+                5,
+                "3 cheeses"
+            )
+            SpacerHorizontal8()
+            TomCard(
+                "Tom the lover",
+                "He loves one-sidedly... and is beaten by the other side.\n",
+                R.drawable.tom_the_lover,
+                "5",
+                0,
+                "5 cheeses"
+            )
         }
         SpacerVertical12()
         Row(modifier = Modifier.padding(horizontal = 16.dp)) {
-        TomCard("Tom the bomb", "He blows himself up before Jerry can catch him.\n", R.drawable.tom_the_bomb, "10", 0, "10 cheeses")
+            TomCard(
+                "Tom the bomb",
+                "He blows himself up before Jerry can catch him.\n",
+                R.drawable.tom_the_bomb,
+                "10",
+                0,
+                "10 cheeses"
+            )
             SpacerHorizontal8()
-            TomCard("Spy Tom", "Disguises itself as a table.\n" + "\n\n", R.drawable.spy_tom, "10", 0, "12 cheeses")
+            TomCard(
+                "Spy Tom",
+                "Disguises itself as a table.\n" + "\n\n",
+                R.drawable.spy_tom,
+                "10",
+                0,
+                "12 cheeses"
+            )
         }
         SpacerVertical12()
         Row(modifier = Modifier.padding(horizontal = 16.dp)) {
-        TomCard("Frozen Tom", "He was chasing Jerry, he froze after the first look\n"+ "\n\n", R.drawable.frozen_tom, "10", 0, "10 cheeses")
+            TomCard(
+                "Frozen Tom",
+                "He was chasing Jerry, he froze after the first look\n" + "\n\n",
+                R.drawable.frozen_tom,
+                "10",
+                0,
+                "10 cheeses"
+            )
             SpacerHorizontal8()
-        TomCard("Sleeping Tom", "He doesn't chase anyone, he just snores in stereo.\n", R.drawable.sleeping_tom, "10", 0, "10 cheeses")
+            TomCard(
+                "Sleeping Tom",
+                "He doesn't chase anyone, he just snores in stereo.\n",
+                R.drawable.sleeping_tom,
+                "10",
+                0,
+                "10 cheeses"
+            )
 
         }
 
