@@ -116,7 +116,7 @@ fun TomAccount(){
 }
 
 @Composable
-private fun TomProfile() {
+ fun TomProfile() {
     Column(
         modifier = Modifier
             .fillMaxWidth(),
