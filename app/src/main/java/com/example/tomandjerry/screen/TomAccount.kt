@@ -19,8 +19,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.example.tomandjerry.R
-import com.example.tomandjerry.composable.SpacerVertical200
-import com.example.tomandjerry.composable.SpacerVertical8
+import com.example.tomandjerry.spacer.SpacerVertical200
+import com.example.tomandjerry.spacer.SpacerVertical8
 import com.example.tomandjerry.composable.TomAccountBody
 import com.example.tomandjerry.composable.TomProfile
 import com.example.tomandjerry.composable.getScores
