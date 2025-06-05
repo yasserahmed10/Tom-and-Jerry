@@ -1,6 +1,5 @@
 package com.example.tomandjerry.screen
 
-import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -8,7 +7,6 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -30,25 +28,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.tomandjerry.R
+import com.example.tomandjerry.composable.Category
+import com.example.tomandjerry.composable.DetailCard
 import com.example.tomandjerry.composable.ItemPriceCard
+import com.example.tomandjerry.composable.MethodCard
 import com.example.tomandjerry.composable.SpacerHorizontal8
-import com.example.tomandjerry.composable.SpacerVertical12
 import com.example.tomandjerry.composable.SpacerVertical16
-import com.example.tomandjerry.composable.SpacerVertical8
-import com.example.tomandjerry.ui.theme.DetailCardSubTitleColor
-import com.example.tomandjerry.ui.theme.DetailCardTitleColor
 import com.example.tomandjerry.ui.theme.IBM
 import com.example.tomandjerry.ui.theme.PastaDesColor
 import com.example.tomandjerry.ui.theme.PrimaryColor
@@ -257,114 +250,6 @@ fun TomKitchen() {
                 }
             }
         }
-    }
-}
-
-@Composable
-fun RowScope.DetailCard(title: String, subtitle: String, painter: Painter) {
-    Box(
-        modifier = Modifier
-            .weight(1f)
-            .background(Color(0xFFE1F0FF), shape = RoundedCornerShape(12.dp))
-            .padding(8.dp)
-    ) {
-        Column(
-            modifier = Modifier.fillMaxSize(),
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Image(
-                painter = painter, contentDescription = null, modifier = Modifier
-                    .size(48.dp)
-                    .padding(top = 12.dp), alignment = Alignment.Center
-            )
-            SpacerVertical12()
-            Text(
-                text = title,
-                fontWeight = FontWeight.Medium,
-                fontSize = 14.sp,
-                fontFamily = IBM,
-                color = DetailCardTitleColor,
-                textAlign = TextAlign.Center
-            )
-            Text(
-                text = subtitle,
-                fontWeight = FontWeight.Medium,
-                fontSize = 12.sp,
-                fontFamily = IBM,
-                color = DetailCardSubTitleColor,
-                textAlign = TextAlign.Center
-            )
-            SpacerVertical8()
-        }
-    }
-}
-@Composable
-fun MethodCard(no: Int, name: String) {
-    Box(modifier = Modifier.fillMaxWidth()) {
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(start = 18.dp)
-                .height(37.dp)
-                .background(Color.White, RoundedCornerShape(topEnd = 12.dp, bottomEnd = 12.dp))
-                .align(Alignment.Center),
-        )
-
-        Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-            Box(
-                modifier = Modifier
-                    .size(37.dp)
-                    .background(Color.White, CircleShape)
-                    .border(1.dp, Color(0xFFD0E5F0), CircleShape)
-            ) {
-
-                Text(
-                    modifier = Modifier.align(Alignment.Center),
-                    text = no.toString(),
-                    fontFamily = IBM,
-                    fontSize = 12.sp,
-                    color = Color(0xFF035587),
-                    fontWeight = FontWeight.Medium,
-                    style = TextStyle(lineHeight = TextUnit.Unspecified, letterSpacing = 0.5.sp)
-                )
-            }
-
-            Text(
-                modifier = Modifier
-                    .padding(8.dp)
-                    .fillMaxWidth(),
-                text = name,
-                fontFamily = IBM,
-                fontSize = 14.sp,
-                color = Color(0xFF121212).copy(alpha = 0.6f),
-                fontWeight = FontWeight.Normal,
-                style = TextStyle(lineHeight = TextUnit.Unspecified, letterSpacing = 0.5.sp)
-            )
-        }
-    }
-}
-
-@Composable
-fun Category(@DrawableRes drawableRes: Int, content: String) {
-    Row(verticalAlignment = Alignment.CenterVertically) {
-        Image(
-            modifier = Modifier.size(24.dp),
-            painter = painterResource(id = drawableRes),
-            contentDescription = null,
-            contentScale = ContentScale.FillBounds
-        )
-
-        SpacerHorizontal8()
-
-        Text(
-            modifier = Modifier,
-            text = content,
-            fontFamily = IBM,
-            fontSize = 16.sp,
-            color = Color.White.copy(alpha = 0.87f),
-            fontWeight = FontWeight.Medium,
-            style = TextStyle(lineHeight = TextUnit.Unspecified, letterSpacing = 0.5.sp)
-        )
     }
 }
 
