@@ -14,7 +14,7 @@ import com.example.tomandjerry.screen.SettingSection
 
 @Composable
 fun SettingList(settingSections: List<SettingSection>) {
-    settingSections.forEachIndexed() { index, section ->
+    settingSections.forEachIndexed { index, section ->
         SectionTitle(section.title)
 
         SpacerVertical8()
