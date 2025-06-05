@@ -6,10 +6,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.tomandjerry.screen.Score
-import com.example.tomandjerry.screen.ScoreList
-import com.example.tomandjerry.screen.SettingList
-import com.example.tomandjerry.screen.SettingSection
 import com.example.tomandjerry.ui.theme.BackgroundColor
 
 @Composable
