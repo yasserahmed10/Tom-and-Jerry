@@ -5,6 +5,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.tomandjerry.spacer.SpacerHorizontal8
+import com.example.tomandjerry.spacer.SpacerVertical8
 
 @Composable
 fun ScoreList(scores: List<Score>) {
