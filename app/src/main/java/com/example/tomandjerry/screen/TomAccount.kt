@@ -94,7 +94,7 @@ fun TomAccount(){
 }
 
 @Composable
-private fun TomAccountBody(
+ fun TomAccountBody(
     scores: List<Score>,
     settingSections: List<SettingSection>
 ) {
