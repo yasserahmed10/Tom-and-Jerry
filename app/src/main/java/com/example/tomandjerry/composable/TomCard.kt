@@ -15,6 +15,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import com.example.tomandjerry.spacer.SpacerHorizontal8
+import com.example.tomandjerry.spacer.SpacerVertical8
 
 @Composable
 fun RowScope.TomCard(
