@@ -181,7 +181,7 @@ fun TomAccount(){
 
 
 @Composable
-private fun SettingList(settingSections: List<SettingSection>) {
+ fun SettingList(settingSections: List<SettingSection>) {
     settingSections.forEachIndexed() { index, section ->
         SectionTitle(section.title)
 
