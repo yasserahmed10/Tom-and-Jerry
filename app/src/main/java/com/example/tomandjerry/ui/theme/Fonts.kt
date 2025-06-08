@@ -14,3 +14,13 @@ val IBM = FontFamily(
     Font(R.font.ibm_plex_sans_arabic_semi_bold, weight = FontWeight.SemiBold),
     Font(R.font.ibm_plex_sans_arabic_regular, weight = FontWeight.Normal)
 )
+
+val Roboto = FontFamily(
+    Font(R.font.roboto_thin, weight = FontWeight.Thin),
+    Font(R.font.roboto_extra_light, weight = FontWeight.ExtraLight),
+    Font(R.font.roboto_light, weight = FontWeight.Light),
+    Font(R.font.roboto_regular, weight = FontWeight.Normal),
+    Font(R.font.roboto_medium, weight = FontWeight.Medium),
+    Font(R.font.roboto_semi_bold, weight = FontWeight.SemiBold),
+    Font(R.font.roboto_bold, weight = FontWeight.Bold),
+)
